@@ -1,0 +1,97 @@
+html, body{
+  height: 100%;
+  margin:0px;
+}
+body{
+  background-color: #50B4A7;
+}
+
+.fcc,.title{
+  color:white;
+  text-align:center;
+  font-family: 'Lobster', cursive;
+}
+
+.timer-div{
+  position:relative;
+  color:white;
+  text-align:center;
+  border: 2px solid white;
+  border-radius:100%;
+  height:300px;
+  width:300px;
+  margin:20px auto;
+  background-color:#FF491B;
+
+}
+
+#timer-status{
+  position:relative;
+  top:-2px;
+  left:-2px;
+  margin:0px;
+  width:300px;
+  height:300px;
+  border-radius:100%;
+  transform:scale(0);
+}
+
+.break-color{
+  background-color:#C8FF00;
+}
+
+.pomodoro-color{
+  background-color:#F8B732;
+}
+
+#timer{
+  position:absolute;
+  top:35%;
+  right:25%;
+  font-size:60px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: grey;
+  z-index:1;
+}
+
+.buttons{
+  margin-top: 40px;
+  text-align:center;
+}
+
+.buttons button{
+  height:30px;
+  width:85px;
+  margin:3px;
+}
+
+.time-controls{
+  text-align:center;
+  color:white;
+}
+
+.change-time{
+  display:inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #E0DCE4;
+    color: black;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+#main-quote {
+    font-family: Play;
+    color: floralwhite;
+    font-style: italic;
+    text-align: center;
+    padding: 35px 10px 0px 10px;
+    margin: 10px;
+    font-size: 1.3em;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Play|Raleway" rel="stylesheet">
+<script src="https://use.fontawesome.com/7d66257d29.js"></script>
+      <link rel="stylesheet" type="text/css" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="pomodoro.css" />
+     <script type='text/javascript' src="pomodoro.js"></script>
+<title> Pomodoro Timer </title>
+</head>
+<body onload='setup()'>
+  <h1 class='title'>Pomodoro Timer </h1>
+
+  
+      
+      
+  <div class='timer-div'>
+    <span id='timer'>25:00</span>
+    <div id='timer-status' class='pomodoro-color'></div>
+  </div>
+      
+      
+  <div class='buttons'>
+    <button class="btn start" onclick='start()'>
+      <i class="fa fa-play" aria-hidden="true"></i>
+    </button>
+    <button class="btn pause" onclick='pause()'>
+     <i class="fa fa-pause" aria-hidden="true"></i>
+    </button>
+    <button class="btn reset" onclick='reset()'>
+        <i class="fa fa-repeat" aria-hidden="true"></i>
+      </button>
+  </div>
+  <div class='time-controls'>
+    <div class='change-time'>
+      <p>Timer Duration</p>
+        <i class="fa fa-minus btn" aria-hidden="true" onclick='chDur(-1)' ></i>
+      <span id='duration'>25</span>
+        <i class="fa fa-plus btn" aria-hidden="true" onclick='chDur(1)'></i>
+    </div>
+    <div class='change-time'>
+      <p>Break Duration</p>
+        <i class="fa fa-minus btn" aria-hidden="true"  onclick='chBrk(-1)'></i>
+      <span id='break'>25</span>
+        <i class="fa fa-plus btn" aria-hidden="true" onclick='chBrk(1)'></i>
+    </div>
+  </div>
+
+
+      
+                <div id="main-quote" class="text-center"></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+     var quotes = [{
+        "quote": "The best preparation for tomorrow is doing your best today.",
+    }, {
+        "quote": "Put your heart, mind, and soul into even your smallest acts. This is the secret of success.",
+    }, {
+        "quote": "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible.",
+    }, {
+        "quote": "Believe you can and you're halfway there.",
+    }, {
+        "quote": "Perfection is not attainable, but if we chase perfection we can catch excellence.",
+    }, {
+        "quote": "When you have a dream, you've got to grab it and never let go.",
+    }, {
+        "quote": "The undertaking of a new action brings new strength.",
+    }, {
+        "quote": "Two roads diverged in a wood and I - I took the one less traveled by, and that has made all the difference.",
+    }, {
+        "quote": "The power of imagination makes us infinite.",
+    }];
+
+    function getQuote() {
+        var randomIndex = Math.floor(Math.random() * quotes.length);
+        var selectedQuote = quotes[randomIndex];
+
+        document.getElementById("main-quote").innerHTML = selectedQuote.quote;
+    }
+    getQuote();
+    </script>
+</body>
+</html>
